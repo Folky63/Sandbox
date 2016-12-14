@@ -1,0 +1,155 @@
+@background: #191919;
+@green: #00ba0c;
+@maincolor: lighten(desaturate(@green, 20%), 40%);
+@maincolor-orange: lighten(desaturate(#ff9400, 20%), 40%);
+body {
+    color: lighten(desaturate(@green, 20%), 40%);
+    background: @background;
+    background-image: linear-gradient();
+    font-family: 'Space Mono', monospace;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+hr {
+    margin: 30px 0;
+}
+.wrapper-left {
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.wrapper {
+    display: inline-block;
+    position: relative;
+    height: 40px;
+    width: 150px;
+    background-image: radial-gradient(@background 30%, @background 70%, @maincolor);
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    
+}
+.span-wrapper {
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    left: 9px;   
+    line-height: 23px;
+}
+
+h2 {
+    display: inline-block;
+    color: lighten(desaturate(@green, 20%), 40%);
+    margin: 0;
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+h5 {
+    display: block;
+    line-height: 3px;
+    margin: 0;
+    padding: 0;
+    text-align: bottom;
+    width: 147px;
+    opacity: 0.2;
+    
+    
+}
+.wrapper span:first-child {
+    color: desaturate(darken(@maincolor, 30%), 50%);
+}
+
+.wrapper span:nth-child(2) {
+    color: desaturate(darken(@maincolor, 15%), 30%);
+}
+
+.wrapper span:nth-child(3) {
+    color: desaturate(darken(@maincolor, 5%), 15%);
+}
+
+.wrapper span:nth-child(4) {
+    color: @maincolor;
+}
+
+.wrapper span:nth-child(5) {
+    color: desaturate(darken(@maincolor, 5%), 15%);
+}
+
+.wrapper span:nth-child(6) {
+    color: desaturate(darken(@maincolor, 15%), 30%);
+}
+
+.wrapper span:nth-child(7) {
+    color: desaturate(darken(@maincolor, 30%), 50%);
+}
+
+.input {
+    width: 50px;
+    outline: none;
+    border: 1px solid desaturate(darken(@maincolor, 20%), 40%);
+    background-image: radial-gradient(desaturate(darken(#00db0e, 20%), 80%), @background 70%, @background 80%);
+    color: @maincolor;
+    font-family: sans-serif;
+    font-size: 13px;
+    text-align: center;
+}
+
+.submit,
+.output {
+    color: @maincolor;
+    background-image: radial-gradient(desaturate(darken(@maincolor, 50%), 90%), @background 90%, @background 90%);
+    border: 1px solid desaturate(darken(@maincolor, 20%), 40%);
+    font-family: sans-serif;
+    font-size: 13px;
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.output {
+    display: inline-block;
+    margin-top: 2px;
+    width: 90px;
+    height: 16px;
+    line-height: 17px;
+    overflow: hidden;
+    background-image: radial-gradient(desaturate(darken(@maincolor-orange, 50%), 90%), @background 90%, @background 90%);
+    border: 1px solid desaturate(darken(@maincolor-orange, 20%), 40%);
+    color: @maincolor-orange;
+    text-align: left;
+    padding-left: 5px;
+    display: none;
+}
+
+.show {
+    display: inline-block;
+}
+
+.output div {
+    display: inline-block;
+}
+
+.input-wrapper label{
+    font-size: 14px;
+}
+.input-wrapper {
+    height: 23px;
+}
+
+.riddle {
+    color: @maincolor;
+    background-image: radial-gradient(desaturate(darken(#00db0e, 20%), 80%), @background 70%, @background 80%);
+    border: 3px solid desaturate(darken(@maincolor, 20%), 40%);
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    
+}

@@ -1,0 +1,39 @@
+input[type="checkbox"] {
+    display: none;
+}
+.login-form {
+    position: relative;
+}
+
+.login-checkbox {
+    margin-left: 30px;
+}
+.login-checkbox input[type="checkbox"] + .checkbox-indicator {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    border: 2px solid black;
+    
+   
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 1px;
+    width: 15px;
+    height: 2px;
+    background-color: black;
+}
+
+.login-checkbox input[type="checkbox"] + .checkbox-indicator::before {
+    transform: rotate(45deg);
+}
+
+.login-checkbox input[type="checkbox"] + .checkbox-indicator::after {
+    transform: rotate(-45deg);
+}
